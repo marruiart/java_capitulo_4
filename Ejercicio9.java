@@ -15,13 +15,14 @@ public class Ejercicio9 {
         double b = s.nextDouble();
         System.out.print("Now introduce the value of 'c': ");
         double c = s.nextDouble();
-        double noSolution = Math.pow(b, 2) - 4 * a * c;
-        if (noSolution < 0) {
+        double root = Math.pow(b, 2) - 4 * a * c;
+        if (root < 0 || 2 * a == 0) {
             System.out.print("This equation doesn't have a real solution");
             return;
         }
-        double xSum = (-b + (Math.sqrt(Math.pow(b, 2) - 4 * a * c))) / (2 * a);
-        double xSub = (-b - (Math.sqrt(Math.pow(b, 2) - 4 * a * c))) / (2 * a);
+        double xSum = (-b + (Math.sqrt(root))) / (2 * a);
+        double xSub = (-b - (Math.sqrt(root))) / (2 * a);
         System.out.printf("x could be %.2f or %.2f", xSum, xSub);
+        s.close();
     }
 }

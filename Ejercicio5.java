@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * This program solves first grade equations (ax+b = 0)
+ * Este programa resuelve una ecuación de primer grado (del tipo ax + b = 0).
  * 
  * @autor Marina Ruiz
  */
@@ -9,12 +9,13 @@ import java.util.Scanner;
 public class Ejercicio5 {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Please, introduce the value of 'a': ");
+        System.out.print("Introduce el valor de 'a': ");
         float a = s.nextFloat();
-        System.out.print("Now introduce the value of 'b': ");
+        System.out.print("Introduce el valor de 'b': ");
         float b = s.nextFloat();
+        s.close();
         if (a == 0) {
-            System.out.print("This equation doesn't have a real solution");
+            System.out.print("Esta ecuación no tiene solución");
             return;
         }
         float x = -b / a;

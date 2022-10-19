@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /**
- * This program receives a number representing the day of the week and prints
- * the subject you have at the first hour that day
+ * Este programa pide por teclado un día de la semana y dice qué asignatura toca
+ * a primera hora ese día.
  * 
  * @autor Marina Ruiz
  */
@@ -10,26 +10,27 @@ import java.util.Scanner;
 public class Ejercicio1 {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Please introduce the day of the week (1. mo, 2. tu, 3. we, 4. th, 5. fr): ");
+        System.out.print("Introduce un día de la semana (1-7) ");
         int day = s.nextInt();
+        s.close();
         switch (day) {
             case 1:
-                System.out.print("The first hour on monday you have 'Programación'");
+                System.out.print("A primera hora el LUNES toca 'Programación'");
                 break;
             case 2:
-                System.out.print("The first hour on tuesday you have 'Programación'");
+                System.out.print("A primera hora el MARTES toca 'Programación'");
                 break;
             case 3:
-                System.out.print("The first hour on wednesday you have 'Entornos de Desarrollo'");
+                System.out.print("A primera hora el MIÉRCOLES toca 'Entornos de Desarrollo'");
                 break;
             case 4:
-                System.out.print("The first hour on thursday you have 'Programación'");
+                System.out.print("A primera hora el JUEVES toca 'Programación'");
                 break;
             case 5:
-                System.out.print("The first hour on friday you have 'Formación y Orientación Laboral'");
+                System.out.print("A primera hora el VIERNES toca 'Formación y Orientación Laboral'");
                 break;
             default:
-                System.out.print("You don't go to school that day!");
+                System.out.print("ES FIN DE SEMANA!");
         }
     }
 }

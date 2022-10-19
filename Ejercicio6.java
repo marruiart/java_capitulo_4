@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
 /**
- * This program calculates the time that takes to a falling object to hit the
- * ground given the height it drops from
+ * Este programa Realiza un programa que calcule el tiempo que tardará en caer
+ * un objeto desde una altura h. Aplica la fórmula t = √(2h/g) siendo
+ * g = 9.81m/s^2
+ * 
  * 
  * @autor Marina Ruiz
  */
@@ -10,14 +12,15 @@ import java.util.Scanner;
 public class Ejercicio6 {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Please introduce the height of fall (m): ");
+        System.out.print("Introduce la altura de caída (m): ");
         double height = s.nextDouble();
+        s.close();
         if (height < 0) {
-            System.out.print("Height can't be a negative number");
+            System.out.print("La altura no puede ser negativa!");
             return;
         }
         double g = 9.81;
         double time = Math.sqrt(2 * height / g);
-        System.out.printf("The objects falls in %.2f seconds", time);
+        System.out.printf("El objeto cae en %.2f segundos", time);
     }
 }

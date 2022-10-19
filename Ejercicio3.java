@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * This program prints the day of the week given its number
+ * Este programa dado un número del 1 a 7 escribe el correspondiente nombre del día de la semana.
  * 
  * @autor Marina Ruiz
  */
@@ -9,36 +9,37 @@ import java.util.Scanner;
 public class Ejercicio3 {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Please introduce a number from 1 to 7: ");
+        System.out.print("Introduce un número del 1 al 7: ");
         int day = s.nextInt();
+        s.close();
         if (day < 0) {
-            System.out.print("That's a negative number!");
+            System.out.print("Ese número es negativo!");
             return;
         }
         switch (day) {
             case 1:
-                System.out.print("It's Monday");
+                System.out.print("Es LUNES");
                 break;
             case 2:
-                System.out.print("It's Tuesday");
+                System.out.print("Es MARTES");
                 break;
             case 3:
-                System.out.print("It's Wednesday");
+                System.out.print("Es MIÉRCOLES");
                 break;
             case 4:
-                System.out.print("It's Thursday");
+                System.out.print("Es JUEVES");
                 break;
             case 5:
-                System.out.print("It's Friday");
+                System.out.print("Es VIERNES");
                 break;
             case 6:
-                System.out.print("It's Saturday");
+                System.out.print("Es SÁBADO");
                 break;
             case 7:
-                System.out.print("It's Sunday");
+                System.out.print("Es DOMINGO");
                 break;
             default:
-                System.out.print("The week doesn't have so many days!");
+                System.out.print("La semana no tiene tantos días!");
         }
     }
 }

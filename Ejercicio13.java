@@ -15,6 +15,7 @@ public class Ejercicio13 {
         int num2 = s.nextInt();
         System.out.print("Introduce el tercer número: ");
         int num3 = s.nextInt();
+        s.close();
 
         int tmp;
         if (num1 > num2) {

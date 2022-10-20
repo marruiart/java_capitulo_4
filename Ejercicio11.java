@@ -14,6 +14,7 @@ public class Ejercicio11 {
         int hours = s.nextInt();
         System.out.print("Introduce los minutos (0 to 59): ");
         int minutes = s.nextInt();
+        s.close();
         if (hours > 23 || minutes > 59 || hours * minutes < 0) {
             System.out.print("Por favor, introduce los números correctos");
             return;
